@@ -1,0 +1,40 @@
+/* container card-like look for each item */
+.note-item {
+    margin: 10px 0;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+/* style the header so it looks like plain text (removes boxed button look) */
+.note-header>.accordion-button {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0.75rem 1rem !important;
+    border: none !important;
+    font-size: 1.05rem;
+    color: inherit;
+}
+
+/* remove the arrow/chevron (optional). Remove this rule if you want to keep the arrow */
+.note-header>.accordion-button::after {
+    display: none !important;
+}
+
+/* ensure body padding is comfortable and consistent */
+.note-body {
+    padding: 1rem;
+}
+
+/* small helpers for action area */
+.note-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* if you want to keep a hover cursor on the header text */
+.note-header>.accordion-button {
+    cursor: pointer;
+}
